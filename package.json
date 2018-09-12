@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-starter",
+  "version": "0.1.0",
+  "description": "A starter cordova plugin project",
+  "cordova": {
+    "id": "cordova-plugin-starter",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagodebastos/cordova-plugin-starter.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "starter",
+    "template",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Thiago de Bastos",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/thiagodebastos/cordova-plugin-starter/issues"
+  },
+  "homepage": "https://github.com/thiagodebastos/cordova-plugin-starter#readme"
+}

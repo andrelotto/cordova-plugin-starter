@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.example.starter" version="0.7.0">
+
+  <name>Starter</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/starter.js" target="js/starter.js"/>
+
+  <js-module src="www/starter.js" name="starter">
+    <clobbers target="starter" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Starter">
+        <param name="android-package" value="com.example.plugin.Starter"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Starter.java" target-dir="src/com/example/plugin/"/>
+  </platform>
+
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="Starter">
+        <param name="ios-package" value="SPStarter" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/SPStarter.h" target-dir="StarterPlugin"/>
+    <source-file src="src/ios/SPStarter.m" target-dir="StarterPlugin"/>
+  </platform>
+
+</plugin>
